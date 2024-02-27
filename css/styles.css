@@ -72,6 +72,23 @@ body {
   letter-spacing: -0.02em;
   line-height: 129%;
   color: #111111;
+  background-color: #fff;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 133%;
+}
+
+.span-title {
+  color: #fd9222;
 }
 
 /*контейнер для страницы прижимаем footer*/
@@ -92,6 +109,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+/* Header */
 .header {
   .container {
     display: flex;
@@ -99,6 +117,7 @@ body {
   }
 }
 .header-logo {
+  flex-grow: 1;
   padding-top: 24px;
   padding-bottom: 32px;
   font-size: 18px;
@@ -111,30 +130,39 @@ body {
   }
 }
 .header-logo-img {
+  height: 24px;
+  width: 24px;
+  margin-left: 4px;
 }
 .header-nav {
+  margin-right: 90px;
 }
 .header-menu-list {
+  height: 100%;
   display: flex;
+  gap: 24px;
+  align-items: center;
 }
-.header-menu-item {
-}
+
 .header-menu-link {
   padding-top: 24px;
   padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 114%;
 }
 .header-social-list {
   display: flex;
   justify-content: space-between;
   gap: 14px;
 }
-.header-social-item {
-}
+
 .header-social-link {
   padding-top: 24px;
   padding-bottom: 32px;
 }
 .header-social-img {
+  height: 24px;
+  width: 24px;
 }
 
 /* Сукция Hero */
@@ -143,26 +171,124 @@ body {
 
 /* секция ingredients */
 
+/* секция Our PRODUCTS */
+
 /* секция made */
 .made {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  margin-bottom: 120px;
 }
 
 .made-title {
   text-align: center;
-  text-transform: uppercase;
+  margin-bottom: 50px;
 }
 .made-content {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
-.made-img {
+.content-img {
+  position: relative;
   display: block;
 }
+.made-img {
+  display: inline-block;
+  border-radius: 15px;
+}
+.content-img::before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: rgba(17, 17, 17, 0.4);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
 .made-content-text {
+  padding: 32px;
 }
 .made-content-title {
+  max-width: 350px;
+  margin-bottom: 28px;
+  letter-spacing: 0;
 }
 .made-content-list {
+  li + li {
+    margin-top: 24px;
+  }
+}
+.made-content-item {
+  list-style: inside;
+}
+
+/* секция tOp Sellers */
+.sellers {
+  margin-bottom: 120px;
+}
+.sellers-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.sellers-list {
+  display: flex;
+  gap: 16px;
+  flex-basis: calc((100%-2 * 16px) / 3);
+}
+.sellers-item {
+  display: block;
+  border-radius: 15px 15px 0 0;
+  cursor: pointer;
+}
+.sellers-img {
+  border-radius: 15px 15px 0 0;
+}
+.sellers-item-title {
+  padding: 28px 0;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  border-left: 1px solid rgba(17, 17, 17, 0.1);
+  border-right: 1px solid rgba(17, 17, 17, 0.1);
+  border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+}
+.selers-img-content {
+  position: relative;
+}
+.sellers-item-text-hover {
+  visibility: hidden;
+  padding: 0 40px;
+  position: absolute;
+  top: 0%;
+  color: #111111;
+  transition: all 0.3s ease-out;
+}
+.sellers-item:hover .sellers-item-text-hover {
+  visibility: visible;
+  top: 38.36%;
+  color: #fff;
+}
+.selers-img-content::before {
+  content: '';
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(0px);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 100%
+  );
+  transition: backdrop-filter 0.3s ease-out;
+}
+
+.sellers-item:hover .selers-img-content::before {
+  backdrop-filter: blur(15px);
 }

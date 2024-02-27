@@ -80,7 +80,7 @@ body {
   flex-direction: column;
   min-height: 100%;
   overflow: hidden;
-  > main {
+  main {
     flex-grow: 1;
   }
 }
@@ -93,7 +93,7 @@ body {
   margin-right: auto;
 }
 .header {
-  > .container {
+  .container {
     display: flex;
     justify-content: space-between;
   }
@@ -104,7 +104,7 @@ body {
   line-height: 111%;
   font-weight: 700;
   text-transform: uppercase;
-  > span {
+  span {
     font-style: italic;
   }
 }
@@ -118,6 +118,8 @@ body {
 .header-menu-item {
 }
 .header-menu-link {
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 .header-social-list {
   display: flex;
@@ -127,6 +129,38 @@ body {
 .header-social-item {
 }
 .header-social-link {
+  padding-top: 24px;
+  padding-bottom: 32px;
 }
 .header-social-img {
+}
+
+/* Сукция Hero */
+
+/* Секция advertise*/
+
+/* секция ingredients */
+
+/* секция made */
+.made {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.made-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.made-content {
+  display: flex;
+  justify-content: space-between;
+}
+.made-img {
+  display: block;
+}
+.made-content-text {
+}
+.made-content-title {
+}
+.made-content-list {
 }

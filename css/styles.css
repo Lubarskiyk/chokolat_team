@@ -99,6 +99,8 @@ body {
   }
 }
 .header-logo {
+  padding-top: 24px;
+  padding-bottom: 32px;
   font-size: 18px;
   letter-spacing: -0.03em;
   line-height: 111%;

@@ -168,8 +168,78 @@ h3 {
 /* Сукция Hero */
 
 /* Секция advertise*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.advertise {
+  background: #1e1823;
+  display: flex;
+}
+
+.advertise-title {
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.advertise-list {
+}
+.advertise-item {
+}
+.advertise-img {
+}
+
+.advertise-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
 
 /* секция ingredients */
+
+.ingredients {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.ingredients-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+}
+.ingredients-list {
+}
+.ingredients-item {
+}
+.ingredients-img {
+}
+.ingredients-title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+}
+.img-button {
+}
 
 /* секция Our PRODUCTS */
 
@@ -291,4 +361,40 @@ h3 {
 
 .sellers-item:hover .selers-img-content::before {
   backdrop-filter: blur(15px);
+}
+
+.review {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.review-item {
+}
+.review-list {
+}
+.review-img {
+  
+}
+.review-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-align: center;
+  color: #111;
+}
+.review-text {
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(17, 17, 17, 0.7);
+}
+.review-button {
+  font-weight: 600;
+  font-size: 18px;
+  color: #111;
 }

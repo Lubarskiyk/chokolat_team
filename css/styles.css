@@ -231,7 +231,6 @@ h3 {
 .ingredients-img {
 }
 .ingredients-title {
-  font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -393,8 +392,13 @@ h3 {
   text-align: center;
   color: rgba(17, 17, 17, 0.7);
 }
+
 .review-button {
   font-weight: 600;
   font-size: 18px;
   color: #111;
+}
+
+.review-button:active{
+  background-color: #fd9222;
 }

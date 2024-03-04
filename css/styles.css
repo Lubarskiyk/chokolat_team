@@ -25,6 +25,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 input,
 button,
@@ -72,7 +73,7 @@ body {
   letter-spacing: -0.02em;
   line-height: 129%;
   color: #111111;
-  background-color: #fff;
+  background-color: #FAFAFA;
 }
 h2 {
   font-size: 24px;
@@ -190,13 +191,28 @@ h3 {
   font-weight: 600;
   font-size: 18px;
   color: #fff;
+  margin-bottom: 18px;
+  padding-left: 28px;
+}
+.advertise-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 50px 56px;
+  gap: 88px;
 }
 
 .advertise-list {
 }
+
 .advertise-item {
 }
 .advertise-img {
+  display: block;
+
+  padding: 15px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 22px;
 }
 
 .advertise-text {
@@ -207,8 +223,17 @@ h3 {
 }
 
 /* секция ingredients */
+/* .ingredients .container{
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+} */
+.section-pading {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
-.ingredients {
+.ingredients-title-name {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.17;
@@ -216,28 +241,74 @@ h3 {
   text-transform: uppercase;
   text-align: center;
   color: #111;
+  max-width: 412px;
+  margin: 0 auto 28px;
 }
+
 .ingredients-text {
+  margin-bottom: 50px;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
+  min-width: 486px;
 }
+
 .ingredients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 24px;
+  column-gap: 32px;
 }
+
 .ingredients-item {
+  position: relative;
+  display: block;
+  max-width: 260px;
+  width: 100%;
 }
+.ingredients-item:nth-child(2n-1) {
+  border: 1px solid #fff;
+  background-color: #fd9222;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.ingredients-item:nth-child(2n) {
+  background-color: #fff;
+  border: 1px solid #fd9222;
+  border-radius: 15px;
+}
+
+.ingredients-item:nth-child(4n-1) {
+  background-color: #000;
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+}
+
 .ingredients-img {
+  display: block;
+  max-width: 100%;
+  margin: 28px auto 36px;
 }
 .ingredients-title {
+  font-weight: 600;
+  padding-left: 28px;
+  align-self: left;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: #fff;
+  margin-bottom: 28px;
 }
+
 .img-button {
+  position: absolute;
+  top: 14px;
+  left: 222px;
 }
 
 /* секция Our PRODUCTS */
@@ -371,11 +442,31 @@ h3 {
   text-align: center;
   color: #111;
 }
+.review-wrapper {
+}
+
 .review-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+
+}
+.review-coment {
+  border:  1px solid rgba(17, 17, 17, 0.1);
+  padding: 54px 24px 24px 24px;
+  border-radius: 15px;
+  background-color: #fff;
 }
 .review-list {
+  max-width: 360px;
+  width: 100%;
+  margin-bottom: 50px;
 }
+
 .review-img {
+  transform: translateY(50%);
+  display: block;
+  margin: 0 auto;
   
 }
 .review-title {
@@ -384,6 +475,8 @@ h3 {
   line-height: 1.33333;
   text-align: center;
   color: #111;
+  margin-bottom: 24px;
+  
 }
 .review-text {
   font-size: 14px;
@@ -394,11 +487,19 @@ h3 {
 }
 
 .review-button {
+  text-align: center;
   font-weight: 600;
   font-size: 18px;
   color: #111;
+  margin-left: 457px;
+  margin-bottom: 120px;
+  border: 1px solid #fd9222;
+  min-width: 222px;
+  padding: 14px 40px;
+  border-radius: 100px;
 }
 
-.review-button:active{
+.review-button:active {
   background-color: #fd9222;
+  
 }
